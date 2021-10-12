@@ -5,7 +5,7 @@ This repository contains code for Cyberdefense(FALL 2021) Assignment 1. Followin
 
 * The `.txt` files contains the output of our operation.
 
-* The `package*.json` configuration files that store information related to the dependencies.
+* The `package*.json` are configuration files that store information related to the dependencies.
 
 ## Setup
 
