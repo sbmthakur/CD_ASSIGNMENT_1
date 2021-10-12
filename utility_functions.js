@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const COOKIE = 'CCiULbNJl4mMsey8Ozo_vCfm8cyVdWGDXr0y4b2j'// '5Vyk2AfNhCtgv0esqtFbLwFJ2n8IuTyUxIDTsXGf'
+export const COOKIE = process.env.COOKIE
 export const getHeaders = () => ({ 
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0', 
   'Accept': '*/*', 
