@@ -16,6 +16,12 @@ Please install the dependencies once `node` is available.
 
 ## Running
 
+### Export the cookie
+
+The Webgoat HTTP server validates incoming requests with the help of **JSESSIONID** cookie. You must export the cookie value before running the program.
+
+`export COOKIE=COOKIE_VALUE`
+
 ### Finding the tables and columns
 
 The script `assignment1.js` is responsible for listing all the tables and columns present in the Database. The script requires two command line arguments in order to start.
