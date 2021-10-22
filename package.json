@@ -1,6 +1,13 @@
 {
   "type": "module",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
   "dependencies": {
     "axios": "^0.22.0"
+  },
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
   }
 }
